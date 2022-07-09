@@ -1,0 +1,84 @@
+.searchbar-container {
+    background-image: linear-gradient(90deg,#4cafff,#2e93e6);
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.search-elements {
+    width: 100%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.9375rem;
+    display: flex;
+    padding: 12px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image-container {
+    margin-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.set-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.set-top .image-container {
+    opacity: 1;
+}
+
+.set-top .search-box-container {
+    left: 0;
+}
+
+.search-box-container {
+    width: 100%;
+    position: relative;
+    left: -90px;
+    transition: left .2s ease-in;
+}
+
+.search-box {
+    background-color: #fff;
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 3px;
+    color: #171717;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    padding-left: 20px;
+    height: 50px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 100%;
+    top: 10px;
+    transform: translateX(-42px);
+}
+
+.search-icon::before {
+    content: "";
+    background-image: url('../../assests/icons8-search.svg');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 1200px) {
+    .search-elements {
+        max-width: 1140px;
+    }
+}

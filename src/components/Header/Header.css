@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ebf2f7;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.9375rem;
+    padding-right: 0;
+    position: relative;
+}
+
+.nav-buttons {
+    display: inline-block;
+    float: right;
+}
+
+.logo {
+    width: 80px;
+    height: 22px;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
